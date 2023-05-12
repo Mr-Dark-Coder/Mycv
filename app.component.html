@@ -1,0 +1,104 @@
+ <div>
+  <div class="sidenav">
+    <img class="mb-3" src="../assets/img/profile3.jpeg" alt="profile" />
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#awards">Awards</a>
+  </div>
+  <div class="main" >
+    <section id="about">
+      <h1>
+        {{ myProfile.fname }} <span>{{ myProfile.lname }}</span>
+      </h1>
+      <h6 class="subheading">
+        {{ myProfile.contactNo }} -- {{ myProfile.email }}-- {{ myProfile.address }} 
+      </h6>
+     
+      <p class="mb-5">{{ myProfile.about }}</p>
+      <div class="social-icons">
+        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </section>
+    <hr>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div *ngFor="let pro of myProfile.projects">
+        <div class="row">
+          <div class="col pro-name">
+            <h4>{{ pro.project_name }}</h4>
+          </div>
+          <div class="col pro-year">
+            <h5 class="text-end">{{ pro.year }}</h5>
+          </div>
+        </div>
+        <div class="row role">
+          <h6>
+            {{ pro.role }}
+          </h6>
+        </div>
+        <div class="row">
+          <p class="description">
+            {{ pro.description }}
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="education">
+      <h2>Education</h2>
+      <div *ngFor="let key of myProfile.education[0] | keyvalue">
+        <div class="row">
+          <div class="col pro-name">
+            <h4>{{ key.value.type }}</h4>
+          </div>
+          <div class="col pro-year">
+            <h5 class="text-end">{{ key.value.duration }}</h5>
+          </div>
+        </div>
+        <div class="row role">
+          <h6>
+            {{ key.value.course_name }}
+          </h6>
+        </div>
+        <div class="row">
+          <p class="description">
+            {{ key.value.gpa }}
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <div *ngFor="let skillArr of myProfile.skills">
+        <h5>{{ skillArr.title }}:</h5>
+        <h6 class="ms-5">{{skillArr.skills}}</h6>
+        <br>
+      </div>
+     
+    </section>
+    <hr>
+    <section id="awards">
+      <h2>AWARDS & CERTIFICATIONS</h2>
+      <ul *ngFor="let award of myProfile.awards ">
+        <li><i class="fas fa-trophy text-warning me-2"></i>{{award}}</li>
+      </ul>
+    </section>
+    <hr>
+    <section id="hobbies">
+      <h2>hobbies</h2>
+      <ul *ngFor="let hobbie of myProfile.hobbies ">
+        <li>{{hobbie}}</li>
+      </ul>
+    </section>
+  </div>
+</div> 
+  
+
+

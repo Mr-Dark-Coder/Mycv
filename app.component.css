@@ -1,0 +1,157 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #bd5d38;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 335px; 
+    font-size: 10px; 
+    padding: 0px 10px;
+    margin-right: 30px;
+  }
+
+  img {
+    border-radius: 50%;
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    margin-top: 3rem !important;
+  }
+
+  h1{
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+
+  span{
+    color: #bd5d38;
+
+  }
+
+  .subheading {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 450;
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 8%;
+}
+
+hr{
+    margin-top: 120px;
+}
+
+
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .social-icons .social-icon:hover {
+    background-color: #bd5d38;
+  }
+  
+  h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  .pro-name{
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .pro-year{
+    color: #bd5d38;
+    font-size: medium;
+    margin-right: 3rem;
+
+  }
+
+  .role{
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #7b7c7d;
+  }
+
+  .description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+  }
+
+  .gpa{
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+
+ .skill{
+  width: 30%;
+  
+ }
+
+ .col-gap{
+  column-gap: 10px;
+  margin-top: 0px;
+ }
+
+ li{
+  font-size: 1.15rem;
+    font-weight: 400;
+    list-style-type: none;
+
+ }
+
+ section{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  align-items: center;
+ }
+
+  
+
+
+
+  
+
+
+
+
+  
